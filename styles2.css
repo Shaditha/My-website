@@ -1,0 +1,52 @@
+
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 75px;
+    background-image: url('image9.jpg');
+    background-size: cover;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+}
+main h3{
+      color:yellow;
+}
+main h4{
+    color:red;
+}
+section {
+    margin: 20px 0;
+}
+
+section img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+section h2 {
+    color: blue;
+    text-align: center;
+}
+
+section p {
+    text-align: justify;
+    margin: 0 20px;
+}
+footer {
+    color:white;
+    backgroung-color: black;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

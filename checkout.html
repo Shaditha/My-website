@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Haute Couture Haven</title>
+    <link rel="stylesheet" href="styles14.css">
+</head>
+<body>
+    <header>
+        <h1>Checkout</h1>
+    </header>
+    
+    <main>
+        <section class="checkout-details">
+            <h2>Your Cart</h2>
+            <h3>Please Select the Items You Want To Add Here</h3>
+            <h2>Payment Methods</h2>
+            <div class="payment-methods">
+                <img src="image128.jpg" alt="PayPal" class="payment-option">
+                <img src="image129.jpg" alt="Credit Card" class="payment-option">
+                <img src="image130.jpg" alt="MasterCard" class="payment-option">
+            </div>
+
+            <div class="payment-form">
+                <h2>Billing Information</h2>
+                <form action="payment.html" method="post">
+                    <label for="cardholder-name">Cardholder's Name:</label>
+                    <input type="text" id="cardholder-name" name="cardholder-name" required>
+
+                    <label for="card-number">Card Number:</label>
+                    <input type="text" id="card-number" name="card-number" required>
+
+                    <label for="security-code">Security Code:</label>
+                    <input type="text" id="security-code" name="security-code" required>
+
+                    <label for="expiry-month">Expiry Month:</label>
+                    <input type="text" id="expiry-month" name="expiry-month" required>
+
+                    <label for="expiry-year">Expiry Year:</label>
+                    <input type="text" id="expiry-year" name="expiry-year" required>
+
+                    <button type="submit">Pay</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>All rights reserved, Haute Couture Haven</p>
+        <p>Email: info@hautecouturehaven.com | Phone: +94 704317501</p>
+        <div class="social-links">
+         
+            <a href="https://facebook.com">Facebook</a>
+            <a href="https://twitter.com">Twitter</a>
+            <a href="https://instagram.com">Instagram</a>
+        </div>
+        <div class="footer-links">
+            <a href="terms.html">Terms and Conditions</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="cookies.html">Cookie Policy</a>
+ <p>
+            <a href="index.html">Home</a> |
+            <a href="about.html">About Us</a> |
+            <a href="signin.html">Sign In</a> |
+            <a href="womenswear.html">Women's Wear</a> |
+            <a href="menswear.html">Men's Wear</a> |
+            <a href="childrensclothes.html">Children's Clothes</a> |
+            <a href="oldfashion.html">Old Fashion Clothes</a> |
+            <a href="newtrends.html">New Trending Fashion Styles</a> |
+            <a href="services.html">Services and Contacts</a> |
+            <a href="upcomingfashion.html">Upcoming Fashion</a> |
+            <a href="gallery.html">Gallery</a> |
+            <a href="reviews.html">Customer Reviews</a> |
+            <a href="specialcollections.html">Special Collections</a> |
+            <a href="checkout.html">Checkout</a>
+        </p>        </div>
+            </footer>
+
+    <script>
+        document.querySelectorAll('.payment-option').forEach(option => {
+            option.addEventListener('click', function() {
+                document.querySelector('.payment-form').style.display = 'block';
+            });
+        });
+    </script>
+</body>
+</html>
